@@ -1,0 +1,21 @@
+{
+  "expo": {
+    "name": "OD (Office of Drinks)",
+    "slug": "od-office-of-drinks",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#080909",
+    "assetBundlePatterns": [
+      "assets/*"
+    ],
+    "ios": {
+      "supportsTablet": false
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#080909"
+      }
+    }
+  }
+}
