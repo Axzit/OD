@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#101112">
+    <title>OD Energy Mix</title>
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="phone-shell" aria-label="OD cafe app">
+      <section class="screen active" id="screen-build" data-screen="build">
+        <header class="hero">
+          <img src="assets/od-energy-bar.png" alt="Colorful OD energy drink station" class="hero-image">
+          <div class="hero-shade"></div>
+          <div class="topbar">
+            <div>
+              <p class="eyebrow">OD Cafe</p>
+              <h1>Build your mix</h1>
+            </div>
+            <button class="icon-button" type="button" data-open-card aria-label="Open member card">
+              <span>QR</span>
+            </button>
+          </div>
+          <div class="mix-preview">
+            <div class="cup" aria-hidden="true">
+              <span class="layer layer-base"></span>
+              <span class="layer layer-secondary"></span>
+              <span class="layer layer-tertiary"></span>
+              <span class="layer layer-quaternary"></span>
+              <span class="cup-shine"></span>
+            </div>
+            <div>
+              <p class="mix-name" id="mixName">Custom Charge</p>
+              <p class="mix-meta" id="mixMeta">Sweet, bright, balanced</p>
+            </div>
+          </div>
+        </header>
+
+        <section class="content band">
+          <div class="section-title">
+            <h2>Formula</h2>
+            <button class="text-button" type="button" id="randomizeMix">Shuffle</button>
+          </div>
+          <div class="selectors" id="selectors"></div>
+        </section>
+
+        <section class="content">
+          <div class="section-title">
+            <h2>Boosts</h2>
+            <span class="pill" id="calorieEstimate">120 kcal</span>
+          </div>
+          <div class="boost-grid" id="boosts"></div>
+        </section>
+
+        <footer class="order-bar">
+          <div>
+            <span>Total</span>
+            <strong id="priceTotal">$5.80</strong>
+          </div>
+          <button class="primary-button" type="button" id="saveMix">Save Mix</button>
+        </footer>
+      </section>
+
+      <section class="screen" id="screen-menu" data-screen="menu">
+        <header class="plain-header">
+          <p class="eyebrow">House mixes</p>
+          <h1>Fast favorites</h1>
+        </header>
+        <section class="content mix-list" id="presetList"></section>
+      </section>
+
+      <section class="screen" id="screen-card" data-screen="card">
+        <header class="plain-header">
+          <p class="eyebrow">Member profile</p>
+          <h1>Shara's OD Card</h1>
+        </header>
+        <section class="member-card">
+          <div class="member-head">
+            <div class="avatar">S</div>
+            <div>
+              <h2>Level <span id="memberLevel">7</span></h2>
+              <p id="memberTier">Neon Regular</p>
+            </div>
+          </div>
+          <canvas id="qrCanvas" width="180" height="180" aria-label="Member QR code"></canvas>
+          <p class="member-code" id="memberCode">OD-2479-86</p>
+          <div class="progress-wrap">
+            <div class="progress-copy">
+              <span id="pointsLabel">740 points</span>
+              <span id="nextReward">260 to Level 8</span>
+            </div>
+            <div class="progress-track"><span id="progressFill"></span></div>
+          </div>
+        </section>
+        <section class="content">
+          <div class="section-title">
+            <h2>Saved</h2>
+            <button class="text-button" type="button" id="clearSaved">Clear</button>
+          </div>
+          <div class="saved-list" id="savedList"></div>
+        </section>
+      </section>
+
+      <nav class="tabbar" aria-label="Primary">
+        <button class="tab active" type="button" data-target="build">
+          <span class="tab-icon">+</span>
+          <span>Build</span>
+        </button>
+        <button class="tab" type="button" data-target="menu">
+          <span class="tab-icon">*</span>
+          <span>Mixes</span>
+        </button>
+        <button class="tab" type="button" data-target="card">
+          <span class="tab-icon">#</span>
+          <span>Card</span>
+        </button>
+      </nav>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

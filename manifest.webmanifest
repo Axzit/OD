@@ -1,0 +1,9 @@
+{
+  "name": "OD Energy Mix",
+  "short_name": "OD",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f8f7f2",
+  "theme_color": "#101112",
+  "description": "Mobile ordering and member card app for OD Cafe custom energy mixes."
+}
