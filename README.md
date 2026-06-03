@@ -26,6 +26,6 @@ npm start
 - Replace the prototype member QR with your real POS or loyalty QR payload
 - Add menu inventory, payments, and customer login
 
-## Note
+## Previous Web Prototype
 
-The React Native app entry is `index.js`, and the main UI lives in `src/App.js`.
+The earlier static prototype files are still present (`index.html`, `styles.css`, `app.js`) in case you want to compare or reuse the web version.

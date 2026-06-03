@@ -1,0 +1,10 @@
+
+> od-office-of-drinks@1.0.0 start
+> expo start --localhost --port 8081
+
+Starting project at C:\Users\shara\OneDrive\Documents\OD
+Starting Metro Bundler
+Waiting on http://localhost:8081
+Logs for your project will appear below.
+Android Bundled 9193ms C:\Users\shara\OneDrive\Documents\OD\index.js (645 modules)
+Android Bundled 34ms C:\Users\shara\OneDrive\Documents\OD\index.js (1 module)
